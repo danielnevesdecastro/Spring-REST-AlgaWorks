@@ -2,6 +2,8 @@ package com.algaworks.listas;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
+
 
 //WARM UP MSR 0 
 public class Exemplo1 {
@@ -36,14 +38,49 @@ public class Exemplo1 {
 		for (int i = 0; i < nomes.size(); i ++ ) {
 			System.out.println("Nome"+ (i +1)+ ": " + nomes.get(i));
 		}
-			System.out.println("---------For aprimorado -------");
+			System.out.println("\nFor aprimorado");
 			
 		//loop aprimorado , tipo do elemento mais variavel local : variavel com elementos em lista
 		//Usar se não precisar do índice;
 		for (String nome : nomes ) {
 			System.out.println("Nome: " + nome);
-					
+				
 		}
+		//usando método desntro da lista forEach
+		//nomes.forEach(new Consumer <String>());
+		System.out.println("\nFOR EACH");
+		
+		nomes.forEach(new Consumer<String>() {
+		//implementando método accept
+			@Override
+			public void accept(String t) {
+				System.out.println(t);
+				
+			}
+		});
+		//Simplificando 
+		//Lambda Expression
+		System.out.println("\nLambda Expression");
+		nomes.forEach(nome->{
+			System.out.println(nome);
 			
+		});
+		//Lambda Simplificada
+		System.out.println("\nLambda Simplificada");
+		nomes.forEach(nome->System.out.println(nome));
+		
+		//Lambda ainda mais simples só com println
+		System.out.println("\nLambda Ainda mais Simples");
+		nomes.forEach(System.out::println);
+		
+		
+		
 	}
 }
+
+
+
+
+
+
+
