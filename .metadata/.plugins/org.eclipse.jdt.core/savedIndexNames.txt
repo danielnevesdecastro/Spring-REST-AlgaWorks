@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\AMBIENTE\CURSOS\JAVA\Mergulho Spring Rest\Códigos\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1509799344.index
+3684120057.index
