@@ -39,7 +39,6 @@ public class Exemplo1 {
 			System.out.println("---------For aprimorado -------");
 			
 		//loop aprimorado , tipo do elemento mais variavel local : variavel com elementos em lista
-		//Usar se não precisar do índice;
 		for (String nome : nomes ) {
 			System.out.println("Nome: " + nome);
 					
